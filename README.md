@@ -15,50 +15,50 @@ Moment - to handle the timestamp
 ## Source Code files
 
 #### app/
-###### app.module.ts           - defines the root module and the dependencies  
-###### app.component.ts        - no code modifications
-###### app.component.html      - html template for app.component
-###### app-routing.module.ts   - defines the routing information (in this we refernce content-routing.module children)
-###### app.component.css       - for site-wide css styles
+* app.module.ts           - defines the root module and the dependencies  
+* app.component.ts        - no code modifications
+* app.component.html      - html template for app.component
+* app-routing.module.ts   - defines the routing information (in this we refernce content-routing.module children)
+* app.component.css       - for site-wide css styles
 
 #### app/navbar
-###### navbar.component.ts     - no code modifications
-###### navbar.component.html   - basic navbar implementation with scope for future improvement like authentication, search blogs, etc
-###### navbar.component.css    - no code modifications
+* navbar.component.ts     - no code modifications
+* navbar.component.html   - basic navbar implementation with scope for future improvement like authentication, search blogs, etc
+* navbar.component.css    - no code modifications
 
 #### app/sidebar
-###### sidebar.component.ts     - communicates with the service to generate a blog list on the sidebar, talks to the refresh service to know when to refresh
-###### sidebar.component.html   - buttons for Display all blogs and Create new blog entry screens and renders blog list on the sidebar
-###### sidebar.component.css    - button activity css
+* sidebar.component.ts     - communicates with the service to generate a blog list on the sidebar, talks to the refresh service to know when to refresh
+* sidebar.component.html   - buttons for Display all blogs and Create new blog entry screens and renders blog list on the sidebar
+* sidebar.component.css    - button activity css
 
 #### app/content
-###### content.module.ts           - defines the content module and the dependencies  
-###### content-routing.module.ts   - defines the routing information for each content screen
+* content.module.ts           - defines the content module and the dependencies  
+* content-routing.module.ts   - defines the routing information for each content screen
 
 #### app/content/create-blog
-###### create-blog.component.ts     - code for saving user input blog, and adding sample blog, calls creat-blogs method which is reponsible to POST data through the API
-###### create-blog.component.html   - rendering empty controls to generate a Blog entity for Post
-###### create-blog.component.css    - no code modifications
+* create-blog.component.ts     - code for saving user input blog, and adding sample blog, calls creat-blogs method which is reponsible to POST data through the API
+* create-blog.component.html   - rendering empty controls to generate a Blog entity for Post
+* create-blog.component.css    - no code modifications
 
 #### app/content/display-blog
-###### display-blog.component.ts    - communicates with the service to generate a blog list on the content page
-###### display-blog.component.html  - renders all blogs returned by the service on the display screen
-###### display-blog.component.css   - code for visual aethetics
+* display-blog.component.ts    - communicates with the service to generate a blog list on the content page
+* display-blog.component.html  - renders all blogs returned by the service on the display screen
+* display-blog.component.css   - code for visual aethetics
 
 #### app/content/update-blog
-###### update-blog.component.ts    - communicates with the service to get the blog by id, implemented it so that the page is re-rendered for every id
-###### update-blog.component.html  - renders blog details for an id in editable controls
-###### update-blog.component.css   - code for visual aethetics
+* update-blog.component.ts    - communicates with the service to get the blog by id, implemented it so that the page is re-rendered for every id
+* update-blog.component.html  - renders blog details for an id in editable controls
+* update-blog.component.css   - code for visual aethetics
 
 #### app/content/error
-###### error.component.ts    - no code modifications (future implementations)
-###### error.component.html  - plain html error message to redirect to
-###### error.component.css   - no code modifications
+* error.component.ts    - no code modifications (future implementations)
+* error.component.html  - plain html error message to redirect to
+* error.component.css   - no code modifications
 
 #### app/shared
-###### blog.ts              - defines the blog entry properties expected form teh service
-###### blogs-api.service.ts - provides methods to communicate with API endpoints
-###### refresh.service.ts   - service to communicate between unrelated compoenents
+* blog.ts              - defines the blog entry properties expected form teh service
+* blogs-api.service.ts - provides methods to communicate with API endpoints
+* refresh.service.ts   - service to communicate between unrelated compoenents
 
 
 ## Browsers Tested
