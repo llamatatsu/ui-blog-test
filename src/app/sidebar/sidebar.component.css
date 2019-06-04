@@ -1,0 +1,28 @@
+.sidebar {
+    height: 100vh;
+    background-color: #212529;
+    padding: 20px;
+    margin: auto;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: lightgray !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: gray !important;
+}
+
+ul.nav li a.active {
+    color: white !important;
+    /* font-weight: bold; */
+}
+
+.blog-timestamp{
+    font-weight: bold;
+}
+
+.style2 {
+    height: 1px;
+    background-color: gray;
+}

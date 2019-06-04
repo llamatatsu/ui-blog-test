@@ -1,0 +1,8 @@
+.display {
+    height: 80vh;
+    overflow: auto;
+}
+
+.spacer{
+    padding-bottom: 20px;
+}

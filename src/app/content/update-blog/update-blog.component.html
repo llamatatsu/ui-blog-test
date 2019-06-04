@@ -1,0 +1,39 @@
+<div class="container custom-container">
+    <div class="col-md-12">
+      <h4 class="header mb-3 text-center">Update Blog</h4>
+      <br/>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="blogDetails.title" class="form-control" placeholder="Title">
+      </div>
+  
+      <div class="form-group">
+        <textarea name="" id="" cols="30" rows="10" [(ngModel)]="blogDetails.text" placeholder="Blog Text" class="form-control"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <!-- <input type="text" [(ngModel)]="blogDetails.timestamp" class="form-control" placeholder="Timestamp"> -->
+        {{blogDetails.timestamp}}
+      </div> 
+  
+      <p class="notes">
+        Unable to Post, Delete, Update blog posts as CORS (Cross-Origin Resource Sharing) needs to be turned on on the server
+      </p>
+
+      <p>
+          Per test instructions:
+
+          The server should require authentication and limit deletion to just posts by the current
+          user or in the case of an administrator, to posts by a user with a given user ID
+      </p>
+
+
+      <div class="btn-group">
+        <button class="btn btn-primary btn-md" (click)="updateBlog()">Save</button>
+        <button class="btn btn-secondary btn-md" routerLink="/display-blogs">Cancel</button>
+        <button class="btn btn-danger btn-md" (click)="deleteBlog(blogDetails.id)">Delete</button>
+      </div>
+
+      
+
+    </div>
+  </div>

@@ -1,0 +1,23 @@
+<div class="container custom-container-2">
+  <div class="no-data text-center" *ngIf="Blog.length == 0">
+    <p>There are no Blogs added yet</p>
+  </div>
+  <div *ngIf="Blog.length != 0">
+    <!-- <h3 class="mb-3 text-center">Blogs</h3> -->
+    <div class="col-md-12 display">
+      <div *ngFor = "let blog of Blog">
+        <h1 class="mt-4 blog-title">{{blog.title}}</h1>
+        <p>{{convertDate(blog.timestamp)}}</p>
+        <p>{{blog.text}}</p>
+
+
+        <div class="btn-group">
+          <button class="btn btn-primary btn-md" routerLink="/update-blog/{{blog.id}}">Edit</button>
+          <button class="btn btn-secondary btn-md" (click)="deleteBlog(blog.id)">Delete</button>
+        </div>
+
+        <hr class="style1 spacer">
+      </div>
+    </div>
+  </div>  
+</div>
