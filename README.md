@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
         - this service for internal components to talk to each other
         - as it is implemented, it sends a refresh request to the sidebar
 
-3. 
+3. Additional libraries imported: Bootstrap, Font-Awesome, Moment (for timestamp handling)
 
 
 ## Development server
