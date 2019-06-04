@@ -1,6 +1,5 @@
 <div id="wrapper">
     <ul class="sidebar nav flex-column">
-        <br/>    
         <li class="nav-item">
             <a href="#" class="nav-link" routerLinkActive="active" routerLink="/display-blogs">
                 <span> Display</span>
@@ -18,7 +17,7 @@
         <li >
             <span>All Blogs:</span>
 
-            <div class="pre-scrollable">
+            <div class="all-blogs">
                 <ul class="list-unstyled" *ngFor = "let blog of Blog">
                     <li class="list-item">
                         <a href="#" class="nav-link" routerLinkActive="active" routerLink="/update-blog/{{blog.id}}">

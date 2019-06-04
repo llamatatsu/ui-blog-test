@@ -26,3 +26,8 @@ ul.nav li a.active {
     height: 1px;
     background-color: gray;
 }
+
+.all-blogs {
+    height: 70vh;
+    overflow-y: scroll;
+}
